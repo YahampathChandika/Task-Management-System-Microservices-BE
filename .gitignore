@@ -1,0 +1,7 @@
+/api-gateway/node_modules
+
+/AuthService/node_modules
+
+/EmployeeService/node_modules
+
+/TaskService/node_modules
