@@ -32,7 +32,7 @@ CREATE DATABASE tm-employee;
 CREATE DATABASE tm-task;
 ```
 
-## 2. ⚙️ Configure Each Service
+## 3. ⚙️ Configure Each Service
 
 Each service uses Sequelize. Update the config/config.json file with your DB credentials.
 
@@ -56,7 +56,19 @@ Each service uses Sequelize. Update the config/config.json file with your DB cre
  * tm-task in task-service
 
 
-## 2. 🚀 Start Each Service
+## 4. 👤 Seed an Admin User (Auth Service)
+To create a default admin user (admin / admin0000), run the seed script in the Auth Service:
+
+```bash
+cd auth-service
+node seeders/user.seeder.js
+```
+
+This will create an initial admin user if one does not already exist.
+
+You should see Admin user created. or Admin user already exists. in your terminal.
+
+## 5. 🚀 Start Each Service
 
 ### Auth Service (3001)
 ```bash
